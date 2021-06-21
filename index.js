@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-
-const Home = { template: '<div>Home</div>' };
+import Home from './views/Home.vue';
 const Foo = { template: '<div>Foo</div>' };
 const Login = { template: '<div>Login</div>' };
 
@@ -18,6 +17,7 @@ const router = new VueRouter({
 Vue.use(VueRouter);
 
 const app = new Vue({
-  router,
-  el: '#app'
+  // router,
+  el: '#app',
+  template: '<Home/>'
 });
